@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="zmit.cn" />
+    <meta name="description" content="zmit.cn" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style_home.css?v=2241">
+    <title>CRM-联系人</title>
+</head>
+<body>
+    <div class="page">
+        <div class="head mui-flex">
+            <div class="cell fixed">
+                <a href="" class="trigger"></a>
+            </div>
+            <div class="head-title cell">联系人</div>
+        </div>
+        <!-- 中间内容 -->
+        <div class="bgf2f2f2 over-flow">
+            <div class="search mui-flex">
+                <div class="cell fixed search-img">
+                    <span class="img"></span>
+                </div>
+                <input type="text" class="cell search-input" placeholder="搜索联系人">
+            </div>
+            <div class="content">
+            <div class="check-text mui-flex">
+                <div class="cell fixed ">
+                    <span class="check-box check-active"></span>
+                </div>
+                <div class="cell">
+                    <p class="line-title">关于商城移动版的原型设计01</p>
+                    <p class="line-gray">未设时长  商城项目/设计</p>
+                </div>
+            </div>
+            <div class="check-text mui-flex">
+                <div class="cell fixed ">
+                    <span class="check-box"></span>
+                </div>
+                <div class="cell">
+                    <p class="line-title">关于商城移动版的原型设计01</p>
+                    <p class="line-gray">未设时长  商城项目/设计</p>
+                </div>
+            </div>
+            <div class="check-text mui-flex">
+                <div class="cell fixed ">
+                    <span class="check-box"></span>
+                </div>
+                <div class="cell">
+                    <p class="line-title">关于商城移动版的原型设计01</p>
+                    <p class="line-gray">未设时长  商城项目/设计</p>
+                </div>
+            </div>
+            <div class="title">我分配的任务</div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="bottom mui-flex">
+            <a href="" class="cell fixed">
+                <span class="catalog"></span>
+            </a>
+            <a href="" class="date cell fixed">
+                <span class="date"></span>
+            </a>
+            <a href="" class="time cell fixed">
+                <span class="time"></span>
+            </a>
+            <a href="" class="important cell fixed">
+                <span class="important"></span>
+            </a>
+            <span class="cell ">
+                <input type="button" value="确定" class="sure-button pull-right">
+            </span>
+        </div>
+    </div>
+</body>
+<script src="js/zepto.min.js?v=1.1.6"></script>
+<script type="text/javascript">
+    Zepto(function($){
+        $(".check-box").tap(function(){
+            var ishas = $(this).hasClass("check-active");
+            if (ishas) {
+
+                $(this).removeClass("check-active");
+            }else{
+                $(this).addClass("check-active");
+            }
+        })
+    });    
+</script>
+</html>

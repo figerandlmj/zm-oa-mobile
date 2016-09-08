@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="zmit.cn" />
+    <meta name="description" content="zmit.cn" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style_crm.css?v=2231">
+    <title>中梦OA手机网</title>
+</head>
+<body>
+    <div class="page"> 
+        <div class="head mui-flex">
+            <div class="cell fixed">
+                <a href="" class="back"></a>
+            </div>
+            <div class="head-title cell">安徽师范大学物电学院</div>
+        </div>
+        <div class="content">
+            <div class="eidt-list" style="border:0;">
+                <label class="fl">客户基本信息<em>（负责人：陈楠楠）</em></label>
+                <span class="fr top"></span>
+                <span class=" fr edit common-edit"></span>
+                <span class="fr blue-color preservation-btn" style="display:none;">保存</span>
+                <span class="fr blue-color cansel-btn" style="display:none;">取消</span>
+            </div>
+            <div class="box clearfix">
+                <p class="edit-p">
+                    <label class="fl">客户名称</label>
+                    <input type="text" value="张三" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">客户类型</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">客户来源</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">来源说明</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">客户状态</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">公司网站</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">客户地址</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p" style="border-bottom:0;">
+                    <label class="fl">邮政编码</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="eidt-list">
+                <label class="fl">联系人信息</label>
+                <span class="fr top"></span>
+                <span class=" fr edit common-edit"></span>
+                <span class=" fr add add-contact-btn"></span>
+                <span class=" fr delete"></span>
+                <span class="fr blue-color preservation-btn" style="display:none;">保存</span>
+                <span class="fr blue-color cansel-btn" style="display:none;">取消</span>
+            </div>
+            <div class="box clearfix">
+                <p class="edit-p">
+                    <label class="fl">姓名</label>
+                    <input type="text" value="张三" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">性别</label>
+                    <select name="" class="fr" style="width:10%;">
+                        <option value="">未知</option>
+                        <option value="">男</option>
+                        <option value="">女</option>
+                    </select>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">籍贯</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">身份证号</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">手机号码</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">手机号码2</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">职位信息</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">微信</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">联系QQ</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p" style="border:0;">
+                    <label class="fl">电子邮箱</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+            </div>
+        </div>
+        <!-- 增加联系人 -->
+        <div class="content contact-add" style="display:none;">
+            <div class="eidt-list">
+                <label class="fl">联系人信息2</label>
+                <span class="fr top bottom"></span>
+                <span class="fr blue-color">保存</span>
+                <span class="fr blue-color add-cansel-btn">取消</span>
+            </div>
+            <div class="box clearfix" style="display:block;">
+                <p class="edit-p">
+                    <label class="fl">姓名</label>
+                    <input type="text" value="" name="" placeholder="请输入姓名" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">性别</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">籍贯</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">身份证号</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">手机号码</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">手机号码2</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">职位信息</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">微信</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">联系QQ</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p" style="border:0;">
+                    <label class="fl">电子邮箱</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+            </div>
+        </div>
+        <div class="content"> 
+            <div class="eidt-list">
+                <label class="fl">业务描述</label>
+                <span class="fr top"></span>
+                <span class=" fr edit common-edit"></span>
+                <span class=" fr money"></span>
+                <span class=" fr add add-business-btn"></span>
+                <span class="fr blue-color preservation-btn" style="display:none;">保存</span>
+                <span class="fr blue-color cansel-btn" style="display:none;">取消</span>
+            </div>
+            <div class="box clearfix">
+                <p class="edit-p">
+                    <label class="fl">业务类型</label>
+                    <input type="text" value="" name="" placeholder="请输入业务类型" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">业务名称</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">业务状态</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p" style="border-bottom:0;">
+                    <label class="fl">总金额</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+            </div>
+        </div>
+         <!-- 增加业务描述 -->
+        <div class="content business-add" style="display:none;">
+            <div class="eidt-list">
+                <label class="fl">业务描述2</label>
+                <span class="fr top bottom"></span>
+                <span class="fr blue-color">保存</span>
+                <span class="fr blue-color add-cansel-btn">取消</span>
+            </div>
+            <div class="box clearfix" style="display:block;">
+                <p class="edit-p">
+                    <label class="fl">业务类型</label>
+                    <input type="text" value="" name="" placeholder="请输入业务类型" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">业务名称</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p">
+                    <label class="fl">业务状态</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+                <p class="edit-p" style="border-bottom:0;">
+                    <label class="fl">总金额</label>
+                    <input type="text" value="" name="" class="fr"/>
+                </p>
+            </div>
+        </div>
+        <div class="content"> 
+            <div class="eidt-list">
+                <label class="fl">沟通记录</label>
+                <span class="fr top bottom"></span>
+            </div> 
+            <div class="box" style="display:block">
+                <div class="edit-content clearfix">
+                    <div class="edit-box">
+                        <textarea placeholder="输入内容..."></textarea>
+                        <div class="mui-flex">
+                            <span class="cell weixin"></span>
+                            <span class="cell person"></span>
+                            <span class="cell href"></span>
+                            <span class="cell confirm">确定</span>
+                        </div>
+                        <!-- 沟通方式弹框 -->
+                        <div class="communicate-box">
+                            <p data-type="0">QQ沟通</p>
+                            <p data-type="1">电话沟通</p>
+                            <p data-type="2">邮件沟通</p>
+                        </div>
+                        <!-- 联系人弹框 -->
+                        <div class="person-box">
+                            <p data-type="0">张先生</p>
+                            <p data-type="1">张先生</p>
+                            <p data-type="2">张先生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-btn record-con-btn">显示沟通记录</div>
+                <div class="record-con-box">
+                    <div class="record-con">
+                        <p class="p01">今天把图发给他，他说有意见，叫我下午过去一趟今天把图发给他，他说有意见，叫我下午过去一趟今天把图发给他，他说有意见，叫我下午过去一趟</p>
+                        <p class="p02">
+                            <label class="fl"><em>来自</em>吴达春<em>与</em>张先生<em>的</em>电话沟通</label>
+                            <label class="fr"><em>2015-11-13</em></label>
+                        </p>
+                    </div>
+                    <div class="download clearfix">
+                        <label class="fl">下载附件（3个附件）</label>
+                        <span class=" fr edit edit-content-box-btn"></span>
+                    </div>
+                    <!-- 沟通记录编辑框 -->
+                    <div class="edit-content edit-content-box clearfix">
+                        <div class="edit-box">
+                            <textarea placeholder="输入内容...">今天把图发给他，</textarea>
+                            <div class="mui-flex">
+                                <span class="cell weixin weixin-hover"></span>
+                                <span class="cell person person-hover"></span>
+                                <span class="cell href"></span>
+                                <span class="cell blue-color edit-cancel-btn">取消</span>
+                                <span class="cell blue-color">保存</span>
+                            </div>
+                            <!-- 沟通方式弹框 -->
+                            <div class="communicate-box">
+                                <p data-id="0">QQ沟通</p>
+                                <p data-id="1">电话沟通</p>
+                                <p data-id="2">邮件沟通</p>
+                            </div>
+                            <!-- 联系人弹框 -->
+                            <div class="person-box">
+                                <p data-id="0">张先生</p>
+                                <p data-id="1">张先生</p>
+                                <p data-id="2">张先生</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record-btn load-more">加载更多</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="eidt-list">
+                <label class="fl">客户分析</label>
+                <span class="fr top bottom"></span>
+            </div>
+            <div class="box" style="display:block">  
+                <div class="edit-content edit-content02 clearfix">
+                    <div class="edit-box edit-box02">
+                        <div class="mui-flex02">
+                            <textarea placeholder="输入内容..." class="fl"></textarea>
+                            <span class="confirm fr">确定</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="record-btn record-con-btn">显示客户分析</div>
+                <div class="record-con-box">
+                    <div class="record-con">
+                        <p class="p01">客户要老的网站风格客户要老的网站风格客户要老的网站风格客户要老的网站风格客户要老的网站风格</p>
+                    </div>
+                    <div class="download analysis clearfix">
+                        <label class="fl">吴达春<em>添加</em>&nbsp;&nbsp;&nbsp;&nbsp;<em>2015-11-13</em></label>
+                        <span class=" fr edit edit-content-box-btn"></span>
+                    </div>
+                    <!-- 客户分析编辑框 -->
+                    <div class="edit-content edit-content-box clearfix">
+                        <div class="edit-box">
+                            <textarea placeholder="输入内容...">今天把图发给他，</textarea>
+                            <div style="margin-right:10px">
+                                <span class="blue-color fr">保存</span>
+                                <span class="blue-color fr edit-cancel-btn" style="margin-right:20px;">取消</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record-btn load-more">加载更多</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/zepto.min.js?v=1.1.6"></script>
+<script type="text/javascript">
+    Zepto(function($){
+        // top箭头点击事件
+        $(".top").on("click",function(){
+            $(this).toggleClass("bottom");
+            $(this).parent().parent().find(".box").toggle();
+        })
+        // input框获取焦点和失去焦点事件
+        $("input").focus(function(){
+            $(this).addClass("hover");
+        })
+        $("input").blur(function(){
+            $(this).removeClass("hover");
+        })
+        // 增加联系人
+        $(".add-contact-btn").on("click",function(){
+            $(".contact-add").show();
+            $(".contact-add").find("input").removeAttr("disabled");
+            $(".contact-add").find("select").removeAttr("disabled");
+        })
+        // 增加业务描述
+        $(".add-business-btn").on("click",function(){
+            $(".business-add").show();
+            $(".business-add").find("input").removeAttr("disabled");
+            $(".business-add").find("select").removeAttr("disabled");
+        })
+        // 沟通记录和客户分析编辑框
+        $(".edit-content-box-btn").on("click",function(){
+            $(this).parent().parent().find(".edit-content-box").show();
+        })
+        // 沟通记录和客户分析编辑取消
+        $(".edit-cancel-btn").on("click",function(){
+            $(this).parent().parent().parent().hide();
+        })
+        // 沟通记录和客户分析内容
+        $(".record-con-btn").on("click",function(){
+            $(this).hide();
+            $(this).parent().find(".record-con-box").show();
+        })
+        // 不可编辑
+        $("input").attr("disabled","true");
+        $("select").attr("disabled","true");
+        // 编辑按钮
+        $(".common-edit").on("click",function(){
+            $(this).hide();
+            $(this).parent().find(".blue-color").show();
+            $(this).parent().parent().find(".box").show();
+            $(this).parent().find(".add").hide();
+            $(this).parent().find(".delete").hide();
+            $(this).parent().find(".money").hide();
+            $(this).parent().find(".top").addClass("bottom");
+            $(this).parent().parent().find("input").removeAttr("disabled");
+            $(this).parent().parent().find("select").removeAttr("disabled");
+        })
+        // 取消
+        $(".cansel-btn").on("click",function(){
+            $(this).parent().find(".edit").show();
+            $(this).parent().find(".blue-color").hide();
+            $(this).parent().find(".add").show();
+            $(this).parent().find(".delete").show();
+            $(this).parent().find(".money").show();
+            $("input").attr("disabled","true");
+            $("select").attr("disabled","true");
+        })
+        // 保存
+        $(".preservation-btn").on("click",function(){
+        })
+        // 增加取消按钮
+        $(".add-cansel-btn").on("click",function(){
+            $(this).parent().parent().hide();
+        })
+        // 沟通方式
+        $(".weixin").on("click",function(){
+            var top = $(this).offset().top-150;
+            $(this).parent().parent().find(".communicate-box").css({
+                "top" : top + "px"
+            });
+            $(this).parent().parent().find(".communicate-box").toggle();
+        })
+        // 选择沟通方式
+        var communicate_type;
+        $(".communicate-box p").on("click",function(){
+            if(!$(this).parent().parent().find(".weixin").hasClass("weixin-hover")){
+                $(this).parent().parent().find(".weixin").addClass("weixin-hover");
+            }
+            communicate_type=$(this).data("type");
+            $(this).parent().hide();
+        })
+        // 联系人
+        $(".person").on("click",function(){
+            var top = $(this).offset().top-150;
+            var left = $(this).offset().left;
+            $(this).parent().parent().find(".person-box").css({
+                "top" : top + "px",
+                "left" : left + "px"
+            });
+            $(this).parent().parent().find(".person-box").toggle();
+        })
+        // 选择联系人
+        var person_id;
+        $(".person-box p").on("click",function(){
+            if(!$(this).parent().parent().find(".person").hasClass("person-hover")){
+                $(this).parent().parent().find(".person").addClass("person-hover");
+            }
+            person_id=$(this).data("id");
+            $(this).parent().hide();
+        })
+    });    
+</script>
+</html>
